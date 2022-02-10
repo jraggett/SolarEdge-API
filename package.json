@@ -1,0 +1,39 @@
+{
+  "name": "homebridge-solaredge-api",
+  "version": "0.0.0-development",
+  "description": "HTTP SolarEdge status via public API for Homebridge",
+  "license": "ISC",
+  "keywords": [
+    "homebridge-plugin"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/jraggett/SolarEdge-API"
+  },
+  "bugs": {
+    "url": "https://github.com/jraggett/SolarEdge-API/issues"
+  },
+  "engines": {
+    "node": ">=10.17.0",
+    "homebridge": ">=0.4.0"
+  },
+  "author": {
+    "name": "Johnathon Raggett",
+    "email": "kl04k3r@gmail.com"
+  },
+  "contributors": [
+    {
+      "name": "Johnathon Raggett"
+    }
+  ],
+  "dependencies": {
+    "homebridge-http-base": "^2.1.8"
+  },
+  "devDependencies": {
+    "semantic-release": "^17.0.8",
+    "semantic-release-cli": "^5.3.1"
+  },
+  "scripts": {
+    "semantic-release": "semantic-release"
+  }
+}

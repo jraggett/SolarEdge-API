@@ -1,0 +1,49 @@
+{
+	"pluginAlias": "SolarEdgeAPI",
+	"pluginType": "accessory",
+	"singular": false,
+	"headerDisplay": "Integrate HTTP based SolarEdge usage.",
+	"footerDisplay": "",
+	"schema": {
+		"type": "object",
+		"properties": {
+			"name": {
+				"title": "Name",
+				"type": "string",
+				"required": true,
+				"default": "SolarEdge Inverter"
+			},
+			"siteID": {
+				"title": "Site ID",
+				"type": "string",
+				"required": true,
+				"default": "1231234"
+			},
+			"APIsecret": {
+				"title": "API Key",
+				"type": "string",
+				"requred": true,
+				"default": ""
+			},
+			"pullInterval": {
+				"title": "Pull interval [ms]",
+				"type": "integer",
+				"description": "Leave empty to update position using push method only. Interval in milliseconds to pull position data from the inverter periodically. ",
+				"required": false,
+				"minimum": 0
+			}
+		}
+	},
+	"layout": [
+	{
+    	"type": "flex",
+        "flex-flow": "row wrap",
+        "items": [
+        {
+        	"key": "name",
+            "type": "name"
+        }
+       ]
+	} }	
+	]
+}
